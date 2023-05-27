@@ -5,7 +5,7 @@ const Questions = [{
         a: [{ text: "Dubai", isCorrect: false },
             { text: "Surat", isCorrect: false },
             { text: "Abu Dhabi", isCorrect: true },
-            { text: "mumbai", isCorrect: false }
+            { text: "Mumbai", isCorrect: false }
         ]
  
     },
@@ -13,7 +13,7 @@ const Questions = [{
         id: 1,
         q: "What is the capital of Japan?",
         a: [{ text: "Bangkok", isCorrect: false, isSelected: false },
-            { text: "phuket", isCorrect: false },
+            { text: "Phuket", isCorrect: false },
             { text: "Ayutthaya", isCorrect: false },
             { text: "Tokyo", isCorrect: true }
         ]
@@ -23,9 +23,9 @@ const Questions = [{
         id: 2,
         q: "What is the capital of Greece",
         a: [{ text: "Rome", isCorrect: false },
-            { text: "vadodara", isCorrect: false },
+            { text: "Vadodara", isCorrect: false },
             { text: "Athens", isCorrect: true },
-            { text: "rajkot", isCorrect: false }
+            { text: "Rajkot", isCorrect: false }
         ]
  
     }
