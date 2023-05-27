@@ -38,7 +38,7 @@ body {
     border-radius: 35%;
     cursor: pointer;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     font-family: "Courier", sans-serif;
 }
 
@@ -66,7 +66,7 @@ body {
     font-size: larger;
     font-family: "Courier", sans-serif;
     flex: 1;
-    margin: 10px;
+    margin: 20px;
     color: white;
     text-shadow: 4px 4px 8px rgba(255, 255, 255, 20); /* Makes question text glow */
 
