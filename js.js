@@ -73,7 +73,7 @@ function iterate(id) {
     // Show selection for op1
     op1.addEventListener("click", () => {
         op1.style.backgroundColor = "creamyyellow";
-        op2.style.backgroundColor = "Slategrey";
+        op2.style.backgroundColor = "Midnightblue";
         op3.style.backgroundColor = "Slategrey";
         op4.style.backgroundColor = "Slategrey";
         selected = op1.value;
@@ -82,7 +82,7 @@ function iterate(id) {
     // Show selection for op2
     op2.addEventListener("click", () => {
         op1.style.backgroundColor = "Slategrey";
-        op2.style.backgroundColor = "creamyyellow";
+        op2.style.backgroundColor = "Creamyblue";
         op3.style.backgroundColor = "Slategrey";
         op4.style.backgroundColor = "Slategrey";
         selected = op2.value;
