@@ -1,16 +1,14 @@
-body
-
-{
-    background: rgb(0, 0, 0);
+body {
+    background: rgb(106, 242, 215);
     font-family: "Courier", sans-serif;
-    height: 100%;
-    background-image: url('trivia.jpg'); 
+    height: 100vh;
+    background-image: url('trivia.jpg');
     background-repeat: no-repeat;
     background-size: cover;  
 }
     
 .panel{
-    height: 100vh;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,58 +16,82 @@ body
 }
 
 .question-container{
-    margin: 10px;
+    margin: 5px;
     padding: 5px;
-    width: 60vw;
+    width: vw;
     height: 8vh;
     background-color: #df642f;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
-     
+    color: white;
+    text-shadow: 4px 4px 8px rgba(255, 255, 255, 30); /* Make question text glow */
+    
+
 }
-.result{
-    margin: 10px;
-    padding: 5px;
-    width:80vw;
-    height: 10vh;
+.option {
+    padding: 15px;
+    width: auto;
+    min-width: 10vw;
+    height: auto;
+    font-size: larger;
+    background-color: rgb(199, 204, 202);
+    border-radius: 35%;
+    cursor: pointer;
     text-align: center;
-    font-size: 50px;
-     
+    margin: 10px;
+    font-family: "Courier", sans-serif;
 }
 
-          
-.option{   
-    padding:15px;
-    width: 10vw;
-    height: 10vh;
-    font-size: larger;
-    background-color: rgb(103, 235, 235);
-    border-radius: 25%;
-}
 .option:hover{
-    background-color: rgb(225, 32, 14);
+    background-color: rgb(28, 50, 174);
+    color: white;
+    text-shadow: 4px 4px 8px rgba(255, 255, 255, 20); /* Make question text glow */
+
 }
+
 .navigation{
-    width: 80vw;
+    width: 50vw;
     height: 10vh;
-    margin: 10px;
-    padding: 5px;
+    margin: 20px;
+    padding:10px;
     display: flex;
-    justify-content: space-around;
-    background-color:#c7dddf;
+    justify-content: space-between;
+    background-color:#8ce5de;
 }
  
 .evaluate,.next{
-    width:30vw;
+    width:auto;
     height: 8vh;
-    padding: 5px;
+    padding: 10px;
     font-size: larger;
+    font-family: "Courier", sans-serif;
+    flex: 1;
+    margin: 10px;
+    color: white;
+    text-shadow: 4px 4px 8px rgba(255, 255, 255, 20); /* Makes question text glow */
+
 }
 .evaluate{
-   
-    background-color: #176ca4;
+    background-color: #3e27c3;
+    cursor: pointer;
 }
+
+
 .next{
-    color: white;
+    color: rgb(17, 17, 17);
     background-color: #e8d079;
+    cursor: pointer; /*turns the cursor to pointer when hover over*/
+    color: white;
+    text-shadow: 4px 4px 8px rgba(255, 255, 255, 20); /* Make text glow */
+
 }
+.evaluate,.next:hover
+{
+        background-color: rgb(36, 43, 170);
+        color: white;
+        text-shadow: 4px 4px 8px rgba(255, 255, 255, 30); /* Make text glow */
+}
+
+
+
+
