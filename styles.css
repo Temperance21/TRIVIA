@@ -52,7 +52,7 @@ body {
 .navigation{
     width: 50vw;
     height: 10vh;
-    margin: 20px;
+    margin: 10px;
     padding:10px;
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@ body {
     font-size: larger;
     font-family: "Courier", sans-serif;
     flex: 1;
-    margin: 20px;
+    margin: 10px;
     color: white;
     text-shadow: 4px 4px 8px rgba(255, 255, 255, 20); /* Makes question text glow */
 
