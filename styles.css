@@ -8,7 +8,7 @@ body {
 }
     
 .panel{
-    height: 200vh;
+    height: 300vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
