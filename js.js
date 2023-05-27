@@ -137,9 +137,11 @@ function iterate(id) {
         if (selected == "true") {
             result[0].innerHTML = "True";
             result[0].style.color = "Yellow";
+            result[0].style.fontSize = "larger";
         } else {
             result[0].innerHTML = "False";
             result[0].style.color = "red";
+            result[0].style.fontSize = "larger";
         }
     })
 }
