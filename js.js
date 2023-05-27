@@ -1,30 +1,30 @@
 // Questions will be asked
 const Questions = [{
         id: 0,
-        q: "What is capital of India?",
-        a: [{ text: "gandhinagar", isCorrect: false },
+        q: "What is the capital of the United Arab Emirates?",
+        a: [{ text: "Dubai", isCorrect: false },
             { text: "Surat", isCorrect: false },
-            { text: "Delhi", isCorrect: true },
+            { text: "Abu Dhabi", isCorrect: true },
             { text: "mumbai", isCorrect: false }
         ]
  
     },
     {
         id: 1,
-        q: "What is the capital of Thailand?",
-        a: [{ text: "Lampang", isCorrect: false, isSelected: false },
+        q: "What is the capital of Japan?",
+        a: [{ text: "Bangkok", isCorrect: false, isSelected: false },
             { text: "phuket", isCorrect: false },
             { text: "Ayutthaya", isCorrect: false },
-            { text: "Bangkok", isCorrect: true }
+            { text: "Tokyo", isCorrect: true }
         ]
  
     },
     {
         id: 2,
-        q: "What is the capital of Gujarat",
-        a: [{ text: "surat", isCorrect: false },
+        q: "What is the capital of Greece",
+        a: [{ text: "Rome", isCorrect: false },
             { text: "vadodara", isCorrect: false },
-            { text: "gandhinagar", isCorrect: true },
+            { text: "Athens", isCorrect: true },
             { text: "rajkot", isCorrect: false }
         ]
  
@@ -72,40 +72,63 @@ function iterate(id) {
  
     // Show selection for op1
     op1.addEventListener("click", () => {
-        op1.style.backgroundColor = "lightgoldenrodyellow";
-        op2.style.backgroundColor = "lightskyblue";
-        op3.style.backgroundColor = "lightskyblue";
-        op4.style.backgroundColor = "lightskyblue";
+        op1.style.backgroundColor = "creamyyellow";
+        op2.style.backgroundColor = "Slategrey";
+        op3.style.backgroundColor = "Slategrey";
+        op4.style.backgroundColor = "Slategrey";
         selected = op1.value;
     })
  
     // Show selection for op2
     op2.addEventListener("click", () => {
-        op1.style.backgroundColor = "lightskyblue";
-        op2.style.backgroundColor = "lightgoldenrodyellow";
-        op3.style.backgroundColor = "lightskyblue";
-        op4.style.backgroundColor = "lightskyblue";
+        op1.style.backgroundColor = "Slategrey";
+        op2.style.backgroundColor = "creamyyellow";
+        op3.style.backgroundColor = "Slategrey";
+        op4.style.backgroundColor = "Slategrey";
         selected = op2.value;
     })
  
     // Show selection for op3
     op3.addEventListener("click", () => {
-        op1.style.backgroundColor = "lightskyblue";
-        op2.style.backgroundColor = "lightskyblue";
-        op3.style.backgroundColor = "lightgoldenrodyellow";
-        op4.style.backgroundColor = "lightskyblue";
+        op1.style.backgroundColor = "Slategrey";
+        op2.style.backgroundColor = "Slategrey";
+        op3.style.backgroundColor = "creamyyellow";
+        op4.style.backgroundColor = "Slategrey";
         selected = op3.value;
     })
  
     // Show selection for op4
     op4.addEventListener("click", () => {
-        op1.style.backgroundColor = "lightskyblue";
-        op2.style.backgroundColor = "lightskyblue";
-        op3.style.backgroundColor = "lightskyblue";
-        op4.style.backgroundColor = "lightgoldenrodyellow";
+        op1.style.backgroundColor = "Slategrey";
+        op2.style.backgroundColor = "Slategrey";
+        op3.style.backgroundColor = "Midnightblue";
+        op4.style.backgroundColor = "Slategrey";
         selected = op4.value;
     })
  
+    function clearOptionSelections() {
+        op1.style.backgroundColor = "Slategrey";  //color for unselected options
+        op2.style.backgroundColor = "Slategrey";
+        op3.style.backgroundColor = "Slategrey";
+        op4.style.backgroundColor = "Slategrey";
+    }
+    
+    // Next button and method
+    const next = document.getElementsByClassName('next')[0];
+    var id = 0;
+    
+    next.addEventListener("click", () => {
+        start = false;
+        if (id < 2) {
+            id++;
+            iterate(id);
+            clearOptionSelections(); // Clears option selections when moving to a new question
+            console.log(id);
+        }
+    })
+
+
+
     // Grabbing the evaluate button
     const evaluate = document.getElementsByClassName("evaluate");
  
@@ -113,7 +136,7 @@ function iterate(id) {
     evaluate[0].addEventListener("click", () => {
         if (selected == "true") {
             result[0].innerHTML = "True";
-            result[0].style.color = "green";
+            result[0].style.color = "Yellow";
         } else {
             result[0].innerHTML = "False";
             result[0].style.color = "red";
