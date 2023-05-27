@@ -61,8 +61,8 @@ body {
  
 .evaluate,.next{
     width:auto;
-    height: 4vh;
-    padding: 8px;
+    height: 8vh;
+    padding: 10px;
     font-size: larger;
     font-family: "Courier", sans-serif;
     flex: 1;
