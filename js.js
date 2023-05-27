@@ -102,7 +102,7 @@ function iterate(id) {
         op1.style.backgroundColor = "Slategrey";
         op2.style.backgroundColor = "Slategrey";
         op3.style.backgroundColor = "Midnightblue";
-        op4.style.backgroundColor = "Slategrey";
+        op4.style.backgroundColor = "Midnightblue";
         selected = op4.value;
     })
  
